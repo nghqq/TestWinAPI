@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{11575918-2c25-4b8e-8e15-01bcf7dd217e}</ProjectGuid>
-    <RootNamespace>DialogBox</RootNamespace>
+    <ProjectGuid>{259b99f6-e8b4-4a70-b816-9985b37544fd}</ProjectGuid>
+    <RootNamespace>ComboBox</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -136,8 +136,7 @@
     <ResourceCompile Include="Resource.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="D_icon.ico" />
-    <Image Include="icon2.ico" />
+    <Image Include="parcel.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
