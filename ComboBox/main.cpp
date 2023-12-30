@@ -27,12 +27,12 @@ BOOL CALLBACK DlgProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 		SendMessage(hwnd, WM_SETICON, 0, (LPARAM)hIcon);
 
 
-		HWND hCombo = GetDlgItem(hwnd, IDC_COMBO1);
+		HWND hList = GetDlgItem(hwnd, IDC_COMBO1);
 		for (int i = 0; i < sizeof(g_sz_VALUES) / sizeof(g_sz_VALUES[0]); i++)
 		{
-			SendMessage(hCombo, CB_ADDSTRING, 0, (LPARAM)g_sz_VALUES[i]);
+			SendMessage(hList, CB_ADDSTRING, 0, (LPARAM)g_sz_VALUES[i]);
 		}
-		SendMessage(hCombo, CB_SETCURSEL, 0, 0); // Сразу же выбирает нулевой элемент  ComboBox
+		SendMessage(hList, CB_SETCURSEL, 0, 0); // Сразу же выбирает нулевой элемент  ComboBox
 
 		break;
 	}
