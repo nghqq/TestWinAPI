@@ -37,12 +37,12 @@ BOOL CALLBACK DlgProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 	case WM_COMMAND:
 		switch (LOWORD(wParam))
 		{
-		//case IDOK:
+		case IDOK:
 		{
-			//HWND hList = GetDlgItem(hwnd, IDC_LIST);
+			HWND hList = GetDlgItem(hwnd, IDC_LIST);
 			CHAR sz_buffer[MAX_PATH]{};
 			CHAR sz_message[MAX_PATH]{};
-			//int i = SendMessage(hList, LB_GETCURSEL, 0, 0); // Получаем  номер выбранного элемента ComboBox
+			int i = SendMessage(hList, LB_GETCURSEL, 0, 0);
 			SendMessage(hList, LB_GETTEXT, i, (LPARAM)sz_buffer);
 			sprintf(sz_message, "Вы выбрали пункт %i со значением \"%s\".", i, sz_buffer);
 			MessageBox(hwnd, sz_message, "Info", MB_OK | MB_ICONINFORMATION);
